@@ -1,7 +1,6 @@
 # Imersão Front-End 2ª Edição
 
-![Img do Projeto](![image](https://github.com/user-attachments/assets/4cb05573-c780-41ab-b8dd-2abb81a051a4)
-) 
+![image](https://github.com/user-attachments/assets/4cb05573-c780-41ab-b8dd-2abb81a051a4)
 
 ## Descrição
 
