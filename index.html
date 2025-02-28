@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="./src/styles/vars.css" />
     <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
     <link rel="stylesheet" href="./src/styles/main-content.css" />
-    <link rel="stylesheet" href="./src/styles/media-query.css">
+    <link rel="stylesheet" href="./src/styles/keyframe.css" />
+    <link rel="stylesheet" href="./src/styles/media-query.css" />
     <script defer src="./script.js"></script>
   </head>
   <body>
@@ -127,106 +128,184 @@
       </header>
 
       <section class="main__content">
-        <h1 class="main__title">Boas vindas</h1>
-        <p class="main__subtitle">Navegar por todas as seções</p>
+        <div id="result-playlist">
+          <h1 class="main__title">Boas vindas</h1>
+          <p class="main__subtitle">Navegar por todas as seções</p>
 
-        <!-- CARDS -->
-         <div class="offer__scroll-container">
-           <div class="cards">
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/1.jpeg" alt="" />
-                 <span class="card__title">Boas festas</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/2.png" alt="" />
-                 <span class="card__title">Feitos para você</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/3.jpeg" alt="" />
-                 <span class="card__title">Lançamentos</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/4.jpeg" alt="" />
-                 <span class="card__title">Creators</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/5.jpeg" alt="" />
-                 <span class="card__title">Para Treinar</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/6.jpeg" alt="" />
-                 <span class="card__title">Podcasts</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/7.jpeg" alt="" />
-                 <span class="card__title">Sertanejo</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/8.jpeg" alt="" />
-                 <span class="card__title">Samba e pagode</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/9.jpeg" alt="" />
-                 <span class="card__title">Funk</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/10.jpeg" alt="" />
-                 <span class="card__title">MPB</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/11.jpeg" alt="" />
-                 <span class="card__title">Rock</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/12.jpeg" alt="" />
-                 <span class="card__title">Hip Hop</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/13.jpeg" alt="" />
-                 <span class="card__title">Indie</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/14.jpeg" alt="" />
-                 <span class="card__title">Relax</span>
-               </div>
-             </a>
-             <a href="" class="card__link text-decoration-none">
-               <div class="card__item">
-                 <img class="card__image" src="./src/assets/playlist/15.jpeg" alt="" />
-                 <span class="card__title">Música Latina</span>
-               </div>
-             </a>
-          
-         
-           </div>
-         </div>
+          <!-- CARDS PLAYLISTS -->
+          <div class="offer__scroll-container">
+            <div class="playlists" id="playlists">
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/1.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Boas festas</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/2.png"
+                    alt=""
+                  />
+                  <span class="playlists__title">Feitos para você</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/3.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Lançamentos</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/4.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Creators</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/5.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Para Treinar</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/6.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Podcasts</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/7.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Sertanejo</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/8.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Samba e pagode</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/9.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Funk</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/10.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">MPB</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/11.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Rock</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/12.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Hip Hop</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/13.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Indie</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/14.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Relax</span>
+                </a>
+              </article>
+              <article class="playlists__card">
+                <a href="" class="playlists__link text-decoration-none">
+                  <img
+                    class="playlists__image"
+                    src="./src/assets/playlist/15.jpeg"
+                    alt=""
+                  />
+                  <span class="playlists__title">Música Latina</span>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARDS ARTISTS  -->
+        <section class="artists hidden" id="result-artist">
+          <article class="artists__card">
+            <a href="" class="artists__link">
+              <div
+                class="artists__img-container d-flex align-items-center justify-content-center"
+                
+              >
+              <img id="artists-img" src="" alt="">
+              </div>
+              <div class="artists__info">
+                <h2 class="artists__name" id="artists-name"></h2>
+                <p class="artists__type">Artist</p>
+              </div>
+            </a>
+          </article>
+        </section>
       </section>
     </main>
 
